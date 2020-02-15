@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 const HelloWorld = () => import('@/components/HelloWorld')
+const Login = () =>import('@/components/Login')
 import menus from '@/config/menu-config'
 Vue.use(Router)
 
@@ -24,5 +25,9 @@ menus.forEach((item) => {
     })
   })
 })
-
+routes.push({
+  path: '/Login',
+  name: 'Login',
+  component: Login
+})
 export default new Router({ routes })

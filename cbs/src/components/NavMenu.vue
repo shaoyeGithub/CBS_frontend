@@ -20,6 +20,7 @@
           <el-menu-item :index="sub.componentName" v-text="sub.name" >
           </el-menu-item>
         </el-menu-item-group>
+        
       </el-submenu>
 
     </el-menu>

@@ -11,7 +11,20 @@ module.exports = [{
     },{
       name: '套餐查询',
       componentName: 'Package'
-    }]
+    },{
+      name: '模拟电话',
+      componentName: 'Call'
+    },{
+      name: '数据分析',
+      componentName: 'UserAnalysis',
+      subName:[{
+        name: '通话时长',
+        component:'CallTime'
+      }]
+
+      
+    }
+  ]
   }, {
     name: '系统',
     id: 'form',
@@ -21,6 +34,10 @@ module.exports = [{
       componentName: 'GenerateCallRecords'
     }, {
       name: '话单分析',
-      componentName: 'Analysis'
-    }]
+      componentName: 'AdminAnalysis'
+    },{
+      name: '数据库管理',
+      componentName: 'Database'
+    }
+  ]
   }]
