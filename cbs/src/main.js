@@ -9,6 +9,10 @@ import NormailizeCss from 'normalize.css'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 import axios from 'axios'
+import 'font-awesome/css/font-awesome.min.css'
+import '../bootstrap/dist/css/bootstrap.min.css'
+import '../bootstrap/dist/js/bootstrap.min.js'
+import '../bootstrap/dist/css/bootstrap.css'
 
 axios.defaults.baseURL = 'http://localhost:8888/'
 Vue.config.productionTip = false

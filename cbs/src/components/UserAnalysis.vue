@@ -405,7 +405,7 @@ var myChart = echarts.init(document.getElementById('id1'));
                             trigger: 'axis'
                         },
                         legend: {
-                            data:['充值','消费']
+                            data:['查询','插入']
                         },
 
                         calculable : true,
@@ -419,20 +419,17 @@ var myChart = echarts.init(document.getElementById('id1'));
                                 },
                                 axisLine:{
                                   lineStyle :{
-                                      color: '#CECECE'
+                                      color: '#000000'
                                   }
                                 },
                                 type : 'category',
                                 boundaryGap : false,
                                 data : function (){
                                     var list = [];
-                                    for (var i = 10; i <= 18; i++) {
-                                        if(i<= 12){
-                                            list.push('2019-'+i + '-01');
-                                        }else{
-                                            list.push('2020-'+(i-12) + '-01');
-                                        }
-                                    }
+                                    list.push('1000')
+                                    list.push('5000')
+                                    list.push('10000')
+                                    
                                     return list;
                                 }()
                             }
@@ -443,27 +440,27 @@ var myChart = echarts.init(document.getElementById('id1'));
                                 type : 'value',
                                 axisLine:{
                                     lineStyle :{
-                                        color: '#CECECE'
+                                        color: '#000000'
                                     }
                                 }
                             }
                         ],
                         series : [
                             {
-                                name:'充值',
+                                name:'查询',
                                 type:'line',
                                 symbol:'none',
                                 smooth: 0.2,
                                 color:['#66AEDE'],
-                                data:[80, 30, 50, 80, 30, 60,50,60]
+                                data:[830, 2747,2109]
                             },
                             {
-                                name:'消费',
+                                name:'插入',
                                 type:'line',
                                 symbol:'none',
                                 smooth: 0.2,
                                 color:['#90EC7D'],
-                                data:[60, 30, 40, 20, 30, 30,20,40]
+                                data:[23,72,82]
                             }
                         ]
                     };

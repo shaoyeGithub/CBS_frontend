@@ -1,18 +1,6 @@
 <template>
   <div id="app">
-    <el-container>
-      <el-header class="header">
-        <vheader />
-      </el-header>
-      <el-container>
-        <el-aside width="200px">
-          <navmenu></navmenu>
-        </el-aside>
-        <el-main>
-        <router-view></router-view>
-        </el-main>
-      </el-container>
-    </el-container>
+     <router-view> </router-view>  
   </div>
   
 </template>
@@ -20,12 +8,14 @@
 <script>
 import Header from '@/components/Header'
 import NavMenu from '@/components/NavMenu'
+import Index from '@/components/Index'
 
 export default {
   name: 'App',
   components: {
     'navmenu': NavMenu,
-    'vheader': Header
+    'vheader': Header,
+    'index': Index
   }
 }
 </script>
